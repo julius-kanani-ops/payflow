@@ -20,3 +20,23 @@ class PaymentCurrency(str, Enum):
     EUR = "EUR"
     GBP = "GBP"
     KES = "KES"
+
+class SubscriptionTier(str, Enum):
+    FREE = "free"
+    BASIC = "basic"
+    PREMIUM = "premium"
+
+class BillingCycle(str, Enum):
+    MONTHLY = "monthly"
+    YEARLY = "yearly"
+    WEEKLY = "weekly"
+
+class SubscriptionStatus(str, Enum):
+    ACTIVE = "active"
+    INACTIVE = "inactive"
+    CANCELLED = "cancelled"
+    EXPIRED = "expired"
+    PAST_DUE = "past_due"
+    TRIALING = "trialing"
+    PAUSED = "paused"
+    INCOMPLETE = "incomplete"
